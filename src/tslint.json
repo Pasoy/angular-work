@@ -5,12 +5,14 @@
             true,
             "attribute",
             "app",
+            "pasoy",
             "camelCase"
         ],
         "component-selector": [
             true,
             "element",
             "app",
+            "pasoy",
             "kebab-case"
         ]
     }
