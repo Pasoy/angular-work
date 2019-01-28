@@ -1,4 +1,12 @@
-<button [disabled]="!allowNewServer" class="btn btn-primary">Add server</button>
+<label for="">Server Name</label>
+<div class="input-group">
+  <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+</div>
+<p>{{serverName}}</p>
+
+<button (click)="addServer()" [disabled]="!allowNewServer" class="btn btn-primary">Add server</button>
+<p [innerText]="serverCreationStatus"></p>
+
 <pasoy-server></pasoy-server>
 <pasoy-server></pasoy-server>
 <pasoy-server></pasoy-server>
