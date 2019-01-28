@@ -1,6 +1,6 @@
-<label for="">Server Name</label>
+<label for="serverName">Server Name</label>
 <div class="input-group">
-  <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+  <input [(ngModel)]="serverName" class="form-control" type="text" id="serverName" aria-describedby="basic-addon3">
 </div>
 <p>{{serverName}}</p>
 
